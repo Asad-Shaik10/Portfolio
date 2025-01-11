@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header .navbar ul li {
+    margin: 0 15px;
+}
+
+header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header .navbar ul li a:hover {
+    color: #e3e3e3;
+}
+
+header .button .btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+
+header .button .btn:hover {
+    background-color: #45a049;
+}
+
+/* Section Styles */
+.section {
+    display: none;
+    padding: 50px 20px;
+}
+
+.active-section {
+    display: block;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    font-size: 2em;
+    color: #555;
+}
+
+.hero p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.hero button {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #45a049;
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Social Media Icons */
+.social-mediaa {
+    margin-top: 20px;
+}
+
+.social-mediaa a {
+    color: #333;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.social-mediaa a:hover {
+    color: #4CAF50;
+}
+
+/* Section Specific Styles */
+#about,
+#contact {
+    text-align: center;
+}
+
+#about h1,
+#contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p,
+#contact p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1.1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .image img {
+        width: 80%;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Add your styling here */
+        .section {
+            display: none;
+        }
+        .active-section {
+            display: block;
+        }
+        .button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Asad</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('home')">Home</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('about')">About</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <!-- <button class="btn">Hire Me</button> -->
+        </div>
+    </header>
+
+    <!-- Sections for Home, About, and Contact -->
+    <div id="home" class="section active-section">
+        <div class="hero">
+            <div class="hero-content">
+                <h4>Hello,</h4>
+                <h1>Asad Shaik</h1>
+                <h2>Software Engineer</h2>
+                <p>"A test engineer ensures the quality and reliability of software applications by designing, implementing, and executing test plans and strategies. They collaborate closely with developers, project managers, and stakeholders to identify potential issues early in the development process. With expertise in automation tools, debugging, and analytical skills, test engineers are critical in delivering seamless user experiences and robust software solutions. Their role combines a meticulous attention to detail with a proactive approach to problem-solving, ensuring products meet and exceed industry standards." </p>
+                <!-- <button id="btn">Download Resume</button> -->
+            </div>
+            <div class="image">
+                <img src="image2.jpg" alt="Portfolio Image" />
+            </div>
+            <div class="social-mediaa">
+                <a href="https://github.com/your-profile" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+           
+            <p>Hi, I'm <strong>Asad Shaik</strong>, a passionate Software Engineer with a strong background in testing and quality assurance. I specialize in ensuring that software is functional, reliable, and user-friendly. With years of experience, I am proficient in various testing techniques including manual testing, automation, and performance testing.</p>
+            <p>In my career, I have worked with cross-functional teams to identify bugs, streamline workflows, and implement improvements that enhance product quality. My goal is to continue growing as a professional and contribute to the development of innovative and reliable software solutions.</p>
+            <p>Feel free to explore my work and connect with me for any collaboration or inquiries!</p>
+            <footer>
+                <p>© 2025 Asad Shaik</p>
+            </footer>
+            <button onclick="goBack()"></button>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+            <p>You can reach me at <strong>asad@example.com</strong></p>
+            <p>Phone: <strong>+1234567890</strong></p>
+            <p>Feel free to connect with me on social media:</p>
+            <p>Feel free to reach out!</p>
+            <footer>
+                <p>© 2025 Asad Shaik</p>
+            </footer>
+            <button onclick="goBack()"></button>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the selected section
+        function showSection(section) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(s => s.classList.remove('active-section'));
+
+            // Show the clicked section
+            document.getElementById(section).classList.add('active-section');
+        }
+
+        // Function for back navigation
+        function goBack() {
+            showSection('home');
+        }
+    </script>
+</body>
+</html>
